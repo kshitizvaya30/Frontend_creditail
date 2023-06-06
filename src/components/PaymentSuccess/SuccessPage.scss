@@ -1,0 +1,80 @@
+@import "../css-config/mixins.scss";
+
+.successPageContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    //Mobile screen dimensions
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 750px;
+    width: 390px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(24, 135, 72, 1);
+
+    .successPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 400;
+        color: #efefef;
+        font-size: 16px;
+        
+
+        .outerCircle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 114px;
+            height: 114px;
+            border-radius: 50%;
+            background-color: rgba(82, 165, 118, 255);
+            margin-top: 100px;
+
+            .tickIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 85px;
+                height: 85px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+
+        .BillNumber {
+            margin-top: 30px;
+        }
+
+        .price{
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        .RetailerName{
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+
+        .divider{
+            width: 70%;
+            border-bottom: 1px dashed #F4F4F4;
+            margin-top: 40px;
+        }
+
+        .paymentMode{
+            font-size: 24px;
+            margin-top: 20px;
+        }   
+
+        .footer{
+            font-size: 12px;
+            position: absolute;
+            bottom: 2%;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import '.././css-config/mixins.scss';
+
+.paymentContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 750px;
+    width: 390px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    // border: 2px solid black;
+    overflow: hidden;
+
+
+    .amountContainer {
+        height: 160px;
+        width: 100%;
+        background-color: rgba(42, 45, 49, 1);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: auto;
+            margin-top: 30px;
+            margin-left: 30px;
+
+            .label {
+                font-size: 11px;
+                font-weight: 400;
+                color: rgba(195, 195, 195, 1);
+                margin-bottom: 5px;
+            }
+
+            .input {
+                height: 50px;
+                width: 80%;
+                border-radius: 6px;
+                background-color: rgba(36, 38, 42, 1);
+                color: rgba(200, 200, 200, 1);
+                border: none;
+            }
+
+            &::-webkit-outer-spin-button,
+            ::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+        }
+    }
+
+    .paymentMethodsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        .heading {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 70px;
+        }
+
+        .paymentMethod {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            
+            .paymentMode{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 151px;
+                width: 106px;
+                background-color: rgba(239, 239, 239, 1);
+                border-radius: 12px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .ConfirmBtn{
+            position: absolute;
+            height: 56px;
+            width: 100%;
+            bottom: 0%;
+            font-size: 16px;
+            font-weight: 400;
+            border: none;
+            background-color: rgba(239, 239, 239, 1);
+            color: rgba(95, 95, 95, 1);
+            cursor: pointer;
+            
+
+
+            &:hover{
+                background-color: rgba(39, 96, 182, 1);
+                color: white;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
