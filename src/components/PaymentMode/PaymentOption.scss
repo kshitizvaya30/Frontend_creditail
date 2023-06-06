@@ -11,7 +11,7 @@
     width: 390px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    // border: 2px solid black;
+    border: 1px solid black;
     overflow: hidden;
 
 
@@ -26,9 +26,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            margin: auto;
             margin-top: 30px;
-            margin-left: 30px;
+            margin-left: 40px;
 
             .label {
                 font-size: 11px;
@@ -36,14 +35,32 @@
                 color: rgba(195, 195, 195, 1);
                 margin-bottom: 5px;
             }
-
-            .input {
-                height: 50px;
-                width: 80%;
-                border-radius: 6px;
+            .inputBox {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 70%;
                 background-color: rgba(36, 38, 42, 1);
-                color: rgba(200, 200, 200, 1);
-                border: none;
+                height: 50px;
+
+                .currencySymbol{
+                    padding-top: 5px;
+                    background-color: rgba(36, 38, 42, 1);
+                    color: rgba(200, 200, 200, 1);
+                    font-size: 30px;
+                }
+
+                input{
+                    font-size: 30px;
+                    width: 70%;
+                    background-color: rgba(36, 38, 42, 1);
+                    color: rgba(200, 200, 200, 1);
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
 
             &::-webkit-outer-spin-button,
@@ -81,6 +98,11 @@
                 border-radius: 12px;
                 font-size: 16px;
                 font-weight: 400;
+            }
+            .selected {
+                border: 1px solid rgba(39, 96, 182, 1);
+                background-color: rgba(223, 232, 244, 1);
+                transition: 0.2s linear;
             }
         }
 
