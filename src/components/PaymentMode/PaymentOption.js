@@ -7,9 +7,9 @@ import { BsCurrencyRupee } from "react-icons/bs";
 
 function PaymentOption() {
   const navigate = useNavigate();
-  const { productData } = useContext(Context);
+  const { productData, updatePendingAmount } = useContext(Context);
   const [price, setPrice] = useState(0);
-  const [selectedMode, setSelectedMode] = useState(null);
+  const [selectedMode, setSelectedMode] = useState('');
 
   useEffect(() => {
     setPrice(productData.PendingAmount);
@@ -18,23 +18,26 @@ function PaymentOption() {
   const handleChange = (updatePrice) => {
     setPrice(updatePrice);
   }
+  
   const handlePaymentModeClick = (mode) => {
     setSelectedMode(mode);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(selectedMode === null){
+    if(selectedMode === ''){
       alert('Please select a mode of Payment');
       return;
     }
-    if(productData.PendingAmount < price){
-      alert('Pending Amount is Less');
+    if(price < 10 || productData.PendingAmount < price){
+      alert('Amount should be greater than ₹10 or less than the pending amount');
       setPrice(productData.PendingAmount);
       return;
     }
     
+    
     //Update the Price in db
+    updatePendingAmount(price, productData.id);
 
     const details = {
       mode: selectedMode,
@@ -45,7 +48,7 @@ function PaymentOption() {
 
   return (
     <div className="paymentContainer">
-      <Navbar showNavbar={true} showHeading={true} navigationStack={-1}/>
+      <Navbar pageHeading={productData.BillNo} subHeading={productData.RetailerName}  showNavbar={true} navigationStack={-1}/>
       <div className="amountContainer">
         <div className="inputContainer">
           <label htmlFor="amount" className="label">
