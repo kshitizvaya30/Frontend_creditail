@@ -1,3 +1,6 @@
+### Deployed Link
+https://creditail-reactjs.netlify.app/
+
 ## Adding Screenshot of Project 
 
 <img width="609" alt="Screenshot 2023-06-07 at 3 24 49 PM" src="https://github.com/kshitizvaya30/Frontend_creditail/assets/75470682/8d084365-1c19-43af-adbd-b9b0f2c8f5c3">
