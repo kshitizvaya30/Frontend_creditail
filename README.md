@@ -1,5 +1,5 @@
 ### Deployed Link
-https://creditail-reactjs.netlify.app/
+http://13.232.148.206:3000/
 
 ## Adding Screenshot of Project 
 
