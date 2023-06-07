@@ -8,7 +8,7 @@ const AppContext = ({ children }) => {
   });
 
   const [data, setData] = useState([]);
-  const url = "http://localhost:8080/";
+  const url = "http://13.232.235.207:8080/";
 
   const [productData, setProductData] = useState({
     "id": 1,
