@@ -8,6 +8,7 @@ const AppContext = ({ children }) => {
   });
 
   const [data, setData] = useState([]);
+  const url = "http://localhost:8080/";
 
   const [productData, setProductData] = useState({
     "id": 1,
@@ -28,7 +29,7 @@ const AppContext = ({ children }) => {
     let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8080/api/getCustomers',
+      url: url+"api/getCustomers",
       headers: { }
     };
     
@@ -51,7 +52,7 @@ const AppContext = ({ children }) => {
     let config = {
       method: 'put',
       maxBodyLength: Infinity,
-      url: 'http://localhost:8080/api/updatePendingAmount',
+      url: url+"api/updatePendingAmount",
       headers: { 
         'Content-Type': 'application/json'
       },

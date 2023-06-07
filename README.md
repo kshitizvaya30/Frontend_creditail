@@ -1,3 +1,11 @@
+## Adding Screenshot of Project 
+
+<img width="609" alt="Screenshot 2023-06-07 at 3 24 49 PM" src="https://github.com/kshitizvaya30/Frontend_creditail/assets/75470682/8d084365-1c19-43af-adbd-b9b0f2c8f5c3">
+<img width="609" alt="Screenshot 2023-06-07 at 3 24 46 PM" src="https://github.com/kshitizvaya30/Frontend_creditail/assets/75470682/d9d1adac-f5ff-4a63-93e2-a6463cfaf925">
+<img width="609" alt="Screenshot 2023-06-07 at 3 24 41 PM" src="https://github.com/kshitizvaya30/Frontend_creditail/assets/75470682/d2ee46f0-9456-4cf3-a99b-4353143833fc">
+<img width="609" alt="Screenshot 2023-06-07 at 3 24 35 PM" src="https://github.com/kshitizvaya30/Frontend_creditail/assets/75470682/6616d67a-a06a-460d-9216-e4198299c704">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
